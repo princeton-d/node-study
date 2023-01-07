@@ -9,7 +9,21 @@
 </head>
 
 <body>
-  <h1>정말정말 신기해~</h1>
+  <input id="name" type="text" value="dog">
+  <button onclick="getSound()">전송</button>
+
+  <script>
+    function getSound() {
+      const text = document.querySelector('#name')
+      const name = text.value
+
+      console.log(name)
+
+      fetch(`http://localhost:8080/sound/${name}`)
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    }
+  </script>
 </body>
 
 </html>
