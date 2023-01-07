@@ -7,4 +7,13 @@ function 노드에서_모듈_export_require_하는_방법() {
   count.plus(5);
   count.이름이_getCount_가_아니라도_쓸_수_있다();
 }
-노드에서_모듈_export_require_하는_방법();
+// 노드에서_모듈_export_require_하는_방법();
+
+// ---------------------------
+
+import { plus2, getCount2 } from './8_모듈_최신_문법.js'; // import 는 최상위 스코프에서만 사용할 수 있다. 확장자명(.js) 꼭 붙여주자
+function 최신_문법의_import_export() {
+  plus2(10);
+  getCount2()
+}
+최신_문법의_import_export()
