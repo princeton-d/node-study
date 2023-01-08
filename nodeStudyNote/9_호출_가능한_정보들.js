@@ -7,6 +7,8 @@ function os_정보() {
 };
 // os_정보();
 
+// -------------------------------------------------
+
 function process_정보() { // 다양한 process 의 정보를 받아올 수 있다.
   const process = require('process');
 
